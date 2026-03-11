@@ -1,0 +1,13 @@
+{
+  "tasks": {
+    "start": "deno run --allow-net --allow-read index.ts",
+    "mock": "deno run --allow-net mock-server.ts",
+    "build": "deno compile --allow-net --allow-read --output votifier-stress index.ts",
+    "compile": "deno compile --allow-net --allow-read --output votifier-stress index.ts"
+  },
+  "imports": {
+    "@std/cli": "jsr:@std/cli@^1.0.0/parse-args",
+    "@std/async": "jsr:@std/async@^1.0.0/pool",
+    "@std/fmt": "jsr:@std/fmt@^1.0.0"
+  }
+}
